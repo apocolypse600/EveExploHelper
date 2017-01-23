@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>512</width>
+                <height>241</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <property name="leftMargin">
+                    <number>0</number>
+                </property>
+                <property name="topMargin">
+                    <number>0</number>
+                </property>
+                <property name="rightMargin">
+                    <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                    <number>0</number>
+                </property>
+                <item>
+                    <widget class="QLabel" name="label_priceEstimate">
+                        <property name="sizePolicy">
+                            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>100</width>
+                                <height>50</height>
+                            </size>
+                        </property>
+                        <property name="frameShape">
+                            <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="lineWidth">
+                            <number>1</number>
+                        </property>
+                        <property name="text">
+                            <string>Waiting for input</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="indent">
+                            <number>0</number>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menuBar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>512</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuOptions">
+                <property name="title">
+                    <string>Options</string>
+                </property>
+                <addaction name="actionKey_Binding"/>
+                <addaction name="actionCREST"/>
+                <addaction name="actionFeatures"/>
+            </widget>
+            <addaction name="menuOptions"/>
+        </widget>
+        <action name="actionKey_Binding">
+            <property name="text">
+                <string>Key Binding</string>
+            </property>
+        </action>
+        <action name="actionCREST">
+            <property name="text">
+                <string>CREST</string>
+            </property>
+        </action>
+        <action name="actionFeatures">
+            <property name="text">
+                <string>Features</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
